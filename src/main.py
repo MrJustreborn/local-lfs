@@ -22,7 +22,7 @@ def verify_password(username, password):
 
 def get_file_path(oid):
     """Returns the storage path of the LFS object based on its OID (SHA-256 hash)."""
-    return os.path.join(LFS_STORAGE_PATH, oid)
+    return os.path.join(os.getcwd(), LFS_STORAGE_PATH, oid)
 
 @app.route('/objects/batch', methods=['POST'])
 @auth.login_required
