@@ -31,7 +31,6 @@ def batch():
     data = request.get_json()
     operation = data.get("operation")
     objects = data.get("objects", [])
-
     response_objects = []
     for obj in objects:
         oid = obj["oid"]
@@ -90,4 +89,4 @@ def download(oid):
     return send_file(file_path, as_attachment=True)
 
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
