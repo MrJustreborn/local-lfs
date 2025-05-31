@@ -44,8 +44,7 @@ def batch():
                     "size": size,
                     "actions": {
                         "download": {
-                            "href": f"{request.host_url}objects/{oid}",
-                            "expires_at": "2026-01-01T00:00:00Z"
+                            "href": f"{request.host_url}objects/{oid}"
                         }
                     }
                 })
@@ -58,8 +57,7 @@ def batch():
                 "size": size,
                 "actions": {
                     "upload": {
-                        "href": f"{request.host_url}objects/{oid}",
-                        "expires_at": "2026-01-01T00:00:00Z"
+                        "href": f"{request.host_url}objects/{oid}"
                     }
                 }
             })
