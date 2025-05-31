@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify, send_file
 from flask_httpauth import HTTPBasicAuth
 
 # Configuration
-LFS_STORAGE_PATH = "./lfs-storage"
+LFS_STORAGE_PATH = os.getenv("LFS_STORAGE_PATH", "/data/lfs")
 USERNAME = "user"
 PASSWORD = "password"
 
