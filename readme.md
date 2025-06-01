@@ -13,3 +13,5 @@ You can change the path of the folder in the ```docker-compose.yml``` file to po
 * Run ```git lfs track '*.bin'```
 * Set the LFS URL in your repo:
 ```git config -f .lfsconfig lfs.url http://user:password@localhost:5000```
+
+> Important: 'user' and 'password' are the [currently] hardcoded credentials for the local LFS storage
